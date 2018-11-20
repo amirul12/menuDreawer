@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BoomMenu</string>
+    <string name="text_ham_button_sub_text_normal">this is normal text</string>
+
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+</resources>

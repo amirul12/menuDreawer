@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.Toolbar>
+
+        <com.rom4ek.arcnavigationview.ArcNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            android:fitsSystemWindows="true"
+            app:itemBackground="@android:color/white"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer"
+            app:arc_cropDirection="cropInside"
+            app:arc_width="96dp"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+        <com.ramotion.circlemenu.CircleMenuView
+            android:id="@+id/circle_menu"
+            app:button_colors="@array/colors"
+            app:button_icons="@array/icons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.ramotion.circlemenu.CircleMenuView>
+
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bmb_buttonEnum="ham"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+                app:bmb_piecePlaceEnum="piecePlace_ham_4" />
+
+
+
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:bmb_buttonEnum="textOutsideCircle"
+                app:bmb_piecePlaceEnum="piecePlace_dot_9_1"
+                app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+                />
+
+
+
+</RelativeLayout>
